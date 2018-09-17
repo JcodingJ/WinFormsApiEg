@@ -1,0 +1,11 @@
+c:\users\jkubiak\documents\visual studio 2015\Projects\WebApiExample\WebApiExample\bin\Debug\WebApiExample.exe.config
+c:\users\jkubiak\documents\visual studio 2015\Projects\WebApiExample\WebApiExample\bin\Debug\WebApiExample.exe
+c:\users\jkubiak\documents\visual studio 2015\Projects\WebApiExample\WebApiExample\bin\Debug\WebApiExample.pdb
+c:\users\jkubiak\documents\visual studio 2015\Projects\WebApiExample\WebApiExample\obj\Debug\WebApiExample.csprojResolveAssemblyReference.cache
+c:\users\jkubiak\documents\visual studio 2015\Projects\WebApiExample\WebApiExample\obj\Debug\WebApiExample.Form1.resources
+c:\users\jkubiak\documents\visual studio 2015\Projects\WebApiExample\WebApiExample\obj\Debug\WebApiExample.Properties.Resources.resources
+c:\users\jkubiak\documents\visual studio 2015\Projects\WebApiExample\WebApiExample\obj\Debug\WebApiExample.csproj.GenerateResource.Cache
+c:\users\jkubiak\documents\visual studio 2015\Projects\WebApiExample\WebApiExample\obj\Debug\WebApiExample.exe
+c:\users\jkubiak\documents\visual studio 2015\Projects\WebApiExample\WebApiExample\obj\Debug\WebApiExample.pdb
+C:\Users\jkubiak\documents\visual studio 2015\Projects\WebApiExample\WebApiExample\bin\Debug\Newtonsoft.Json.dll
+C:\Users\jkubiak\documents\visual studio 2015\Projects\WebApiExample\WebApiExample\bin\Debug\Newtonsoft.Json.xml
