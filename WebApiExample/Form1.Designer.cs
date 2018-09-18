@@ -57,7 +57,6 @@
             this.txtCur.Size = new System.Drawing.Size(100, 20);
             this.txtCur.TabIndex = 1;
             this.txtCur.Text = "EUR";
-
             // 
             // txtVal
             // 
@@ -96,7 +95,7 @@
             // 
             // btnCalc
             // 
-            this.btnCalc.Location = new System.Drawing.Point(263, 226);
+            this.btnCalc.Location = new System.Drawing.Point(266, 200);
             this.btnCalc.Name = "btnCalc";
             this.btnCalc.Size = new System.Drawing.Size(75, 23);
             this.btnCalc.TabIndex = 6;
@@ -107,7 +106,7 @@
             // lblRate
             // 
             this.lblRate.AutoSize = true;
-            this.lblRate.Location = new System.Drawing.Point(49, 192);
+            this.lblRate.Location = new System.Drawing.Point(51, 200);
             this.lblRate.Name = "lblRate";
             this.lblRate.Size = new System.Drawing.Size(35, 13);
             this.lblRate.TabIndex = 7;
@@ -116,7 +115,7 @@
             // lblRatee
             // 
             this.lblRatee.AutoSize = true;
-            this.lblRatee.Location = new System.Drawing.Point(13, 192);
+            this.lblRatee.Location = new System.Drawing.Point(15, 200);
             this.lblRatee.Name = "lblRatee";
             this.lblRatee.Size = new System.Drawing.Size(36, 13);
             this.lblRatee.TabIndex = 8;
@@ -125,7 +124,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(120, 192);
+            this.label4.Location = new System.Drawing.Point(122, 200);
             this.label4.Name = "label4";
             this.label4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label4.Size = new System.Drawing.Size(37, 13);
@@ -135,7 +134,7 @@
             // lblRes
             // 
             this.lblRes.AutoSize = true;
-            this.lblRes.Location = new System.Drawing.Point(169, 192);
+            this.lblRes.Location = new System.Drawing.Point(171, 200);
             this.lblRes.Name = "lblRes";
             this.lblRes.Size = new System.Drawing.Size(35, 13);
             this.lblRes.TabIndex = 10;
@@ -145,7 +144,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(353, 261);
+            this.ClientSize = new System.Drawing.Size(353, 238);
             this.Controls.Add(this.lblRes);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lblRatee);

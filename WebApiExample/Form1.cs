@@ -2,7 +2,9 @@
 using System.Windows.Forms;
 using System.IO;
 using System.Xml;
-
+using System.Net;
+using System.Globalization;
+using WebApiExample;
 
 namespace WebApiExample
 {
@@ -15,13 +17,13 @@ namespace WebApiExample
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
         }
 
         private void btnCalc_Click(object sender, EventArgs e)
         {
             string url = "http://api.nbp.pl/api/exchangerates/rates/a/" + txtCur.Text;
-            var request = System.Net.WebRequest.Create(url);
+            
+             var request = WebRequest.Create(url);
             string xml="";
 
             request.Timeout = 1000;
@@ -36,6 +38,11 @@ namespace WebApiExample
                     {
                         var reader = new StreamReader(stream, System.Text.Encoding.UTF8);
                         xml = reader.ReadToEnd();
+                        decimal val = getRateFromXML(xml);                        
+                        decimal pln = decimal.Parse(txtVal.Text);
+                        decimal result = val * pln;
+                        lblRate.Text = val.ToString();
+                        lblRes.Text = result.ToString();
                         txtRes.Text = xml;
                     }
                 }
@@ -44,23 +51,19 @@ namespace WebApiExample
             {
                 MessageBox.Show(ex.Message);
             }
-
+        }
+        private decimal getRateFromXML(string xml)
+        {
+            CultureInfo culInfo = new System.Globalization.CultureInfo("en-GB", true);
+            decimal result;
             XmlDocument xdoc = new XmlDocument();
             xdoc.LoadXml(xml);
-
             XmlNodeList elemList = xdoc.GetElementsByTagName("Mid");
-
-            System.Globalization.CultureInfo culInfo = new System.Globalization.CultureInfo("en-GB", true);
             string res = elemList[0].InnerXml;
-            lblRate.Text = res;
-
-            decimal pln = decimal.Parse(txtVal.Text);
-            decimal val = decimal.Parse(res, culInfo);
-            
-            decimal result = val * pln;
-            
-            lblRes.Text = result.ToString();
+            result = decimal.Parse(res, culInfo);
+            return result;
         }
+
 
     }
 }
